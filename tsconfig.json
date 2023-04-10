@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "incremental": true,                         
+    "target": "ES2021",                                
+    "module": "CommonJS",                           
+    "allowJs": true,      
+    
+    // required for smart sync
+    "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "build/types",
+    "strictPropertyInitialization": false,
+     "outDir": "./build/lib/",                             
+   "composite": true,                           
+    "tsBuildInfoFile": "../../.build-cache/dlt-substrate-relayerError.tsbuildinfo",
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2019",
+      "dom"
+    ],         
+    "removeComments": false,                      
+
+    "strict": true,                                 
+
+    "strictNullChecks": true,                    
+
+    "moduleResolution": "node",                  
+    "resolveJsonModule": true,            
+
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ],                                        
+
+    "esModuleInterop": true,                        
+
+    "inlineSourceMap": true,                     
+
+    "experimentalDecorators": true,              
+
+    "useUnknownInCatchVariables": true,
+
+    "skipLibCheck": false,                           
+    "forceConsistentCasingInFileNames": true        
+  },
+  "include": ["script/**/*"],
+  "exclude": ["node_modules", "build"]
+}
